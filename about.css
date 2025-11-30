@@ -1,0 +1,35 @@
+#about-me {
+    background-color: rgb(97, 160, 180);
+    padding: 50px;
+     font-family: 'Times New Roman', Times, serif;
+
+
+}
+#education {
+    background-color: rgb(27, 120, 151);
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #000;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+hr{
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+#HOBBIES {
+    text-align: center;
+    background-color: rgb(31, 70, 82);
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
