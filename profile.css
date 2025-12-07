@@ -1,0 +1,78 @@
+/* Profile page styles */
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Generic container for the profile. The HTML may use a plain div,
+     so target the first direct div under body as a fallback. */
+.profile,
+body > div:first-of-type {
+    max-width: 900px;
+    margin: 36px auto;
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(18, 38, 63, 0.06);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile img,
+body > div:first-of-type img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,0.08);
+}
+
+.profile .info,
+body > div:first-of-type .info {
+    flex: 1;
+}
+
+.profile h3,
+body > div:first-of-type h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+}
+
+.profile p,
+body > div:first-of-type p {
+    margin: 4px 0;
+    line-height: 1.45;
+}
+
+footer {
+    text-align: center;
+    color: #5a6a72;
+    margin-top: 22px;
+    font-size: 0.95rem;
+}
+
+/* Small screens: stack profile vertically */
+@media (max-width: 640px) {
+    .profile,
+    body > div:first-of-type {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile img,
+    body > div:first-of-type img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Utility: bold label inside paragraphs */
+.profile p b,
+body > div:first-of-type p b {
+    font-weight: 700;
+}
+
+/* End of profile.css */
